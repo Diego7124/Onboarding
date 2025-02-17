@@ -26,8 +26,9 @@ function Settings() {
               type="checkbox" 
               checked={darkMode} 
               onChange={handleDarkModeToggle} 
-              className="settings-input" 
+              className="settings-input toggle-input" 
             />
+            <span className="toggle-slider"></span>
           </label>
         </div>
         <div className="settings-option">
@@ -36,7 +37,7 @@ function Settings() {
             <select 
               value={fontSize} 
               onChange={handleFontSizeChange} 
-              className="settings-input"
+              className="settings-input select-input"
             >
               <option value="small">Pequeño</option>
               <option value="medium">Mediano</option>
@@ -51,8 +52,9 @@ function Settings() {
               type="checkbox" 
               checked={notifications} 
               onChange={handleNotificationsToggle} 
-              className="settings-input" 
+              className="settings-input toggle-input" 
             />
+            <span className="toggle-slider"></span>
           </label>
         </div>
         <div className="settings-option">
@@ -60,7 +62,7 @@ function Settings() {
             Foto de Perfil
             <input 
               type="file" 
-              className="settings-input" 
+              className="settings-input file-input" 
             />
           </label>
         </div>
@@ -69,8 +71,9 @@ function Settings() {
             Integración con Redes Sociales
             <input 
               type="checkbox" 
-              className="settings-input" 
+              className="settings-input toggle-input" 
             />
+            <span className="toggle-slider"></span>
           </label>
         </div>
       </div>

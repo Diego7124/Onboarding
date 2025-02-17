@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHome, FaCheckCircle, FaBell, FaEnvelope, FaFileAlt, FaUsers, FaCalendarAlt, FaChartLine } from 'react-icons/fa';
+import { FaHome, FaCheckCircle, FaBell, FaEnvelope, FaFileAlt, FaUsers, FaCalendarAlt, FaChartLine, FaQuestionCircle, FaMapSigns } from 'react-icons/fa';
 import Navbar from './Navbar';
 import './styles.css';
 
@@ -31,6 +31,10 @@ function Home() {
             </div>
           </div>
           <div className="widget">
+            <h3 className="widget-title">Tour Interactivo</h3>
+            <p className="widget-description"><FaMapSigns /> Sigue esta guía paso a paso para conocer las funcionalidades principales de la plataforma.</p>
+          </div>
+          <div className="widget">
             <h3 className="widget-title">Lista de Tareas</h3>
             <ul className="task-list">
               <li className="task-item"><FaCheckCircle /> Completar perfil</li>
@@ -41,6 +45,15 @@ function Home() {
               <li className="task-item"><FaUsers /> Reunión con el equipo</li>
               <li className="task-item"><FaCalendarAlt /> Planificar la próxima semana</li>
               <li className="task-item"><FaChartLine /> Preparar informe mensual</li>
+            </ul>
+          </div>
+          <div className="widget">
+            <h3 className="widget-title">Preguntas Frecuentes</h3>
+            <p className="widget-description"><FaQuestionCircle /> Encuentra respuestas rápidas a las preguntas más comunes.</p>
+            <ul className="faq-list">
+              <li className="faq-item">¿Cómo cambio mi contraseña?</li>
+              <li className="faq-item">¿Dónde encuentro los tutoriales?</li>
+              <li className="faq-item">¿Cómo configuro las notificaciones?</li>
             </ul>
           </div>
         </div>

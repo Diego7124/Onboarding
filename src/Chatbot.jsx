@@ -6,8 +6,8 @@ import './styles.css';
 function Chatbot() {
   const [messages, setMessages] = useState([
     { sender: "bot", text: "¡Hola! ¿En qué puedo ayudarte hoy?" },
-    { sender: "user", text: "¿Cuál es el clima hoy?" },
-    { sender: "bot", text: "El clima hoy es soleado con una temperatura de 25°C." },
+    { sender: "user", text: "¿Como puedo consultar mis tareas pendientes?" },
+    { sender: "bot", text: "Para consultar tus tareas......" },
   ]);
 
   const handleSendMessage = (e) => {
