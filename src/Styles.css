@@ -1,45 +1,26 @@
 /* styles.css */
 
-
-body{
+/* Body Styles */
+body {
+  margin: 0;
+  display: flex;
   justify-content: center;
-  background-color:#4a5568;
-  align-content: safe;
+  align-items: center;
+  background-color: #1e3a8a; /* Dark Blue */
+  font-family: Arial, sans-serif;
 }
-
-  
-  .icon {
-    font-size: 3rem;
-    color: white;
-    margin-bottom: 1rem;
-  }
-  
-  .title {
-    font-size: 1.875rem; /* 3xl */
-    font-weight: 800; /* extrabold */
-    color: white;
-    margin-bottom: 0.5rem;
-  }
-  
-  .description {
-    color: white;
-    font-size: 1.125rem; /* lg */
-  }
-  
-
-
-  /* styles.css */
 
 /* Navbar Styles */
 .navbar {
-  background-color: #2d3748;
+  background-color: #1e40af; /* Navy Blue */
   padding: 1rem;
+  width: 100%;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  box-shadow: #cbd5e0;
+  align-items: center;
 }
 
 .navbar-title {
@@ -62,20 +43,34 @@ body{
 }
 
 .navbar-link:hover {
-  color: #f6e05e;
+  color: #93c5fd; /* Light Blue */
 }
 
-/* General Container Styles */
+/* Container Styles */
 .container {
   padding: 1.5rem;
-  background-color: rgba(245, 245, 245, 0.011);
+  background: linear-gradient(to right, #60a5fa, #3b82f6); /* Light Blue to Medium Blue */
   border-radius: 1.5rem;
-  box-shadow: white;
-  width:  1200px;
-  height: 1000px;
-  margin: 2.5rem auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 95%;
+  height: 90%;
+  max-height: 95%;
   text-align: center;
-  
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark Mode Styles */
+.dark-mode .container {
+  background: linear-gradient(to right, #1e293b, #111827); /* Darker Blues */
+}
+
+.dark-mode .title,
+.dark-mode .description,
+.dark-mode .settings-label {
+  color: white;
 }
 
 /* Icon Styles */
@@ -99,6 +94,111 @@ body{
   font-size: 1.125rem; /* lg */
 }
 
+/* Dashboard Styles */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.widget {
+  flex: 1 1 30%;
+  background-color: #2563eb; /* Darker Blue */
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.widget-title {
+  font-size: 1.25rem; /* xl */
+  font-weight: 700; /* bold */
+  margin-bottom: 0.5rem;
+}
+
+.widget-data {
+  font-size: 2rem; /* 2xl */
+  font-weight: 800; /* extrabold */
+}
+
+/* Settings Option Styles */
+.settings-option {
+  margin: 1rem 0;
+}
+
+.settings-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1e3a8a; /* Dark Blue */
+  font-weight: 600;
+}
+
+.settings-input {
+  margin-left: 0.5rem;
+}
+
+/* Chatbot Styles */
+.botseccion {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.message {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.message.bot {
+  background-color: #e2e8f0;
+  align-self: flex-start;
+}
+
+.message.user {
+  background-color: #bee3f8;
+  align-self: flex-end;
+}
+
+/* Message Form Styles */
+.message-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.message-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 9999px;
+}
+
+.send-button {
+  background-color: #3b82f6; /* Medium Blue */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #2563eb; /* Darker Blue */
+}
+
 /* Button Styles */
 button {
   padding: 0.75rem 1.5rem;
@@ -115,7 +215,7 @@ button:hover {
 button.previous {
   border: 2px solid #cbd5e0;
   background-color: white;
-  color: #4a5568;
+  color: #1e3a8a; /* Dark Blue */
 }
 
 button.previous:hover {
@@ -123,20 +223,19 @@ button.previous:hover {
 }
 
 button.next {
-  background-color: #d69e2e;
+  background-color: #3b82f6; /* Medium Blue */
   color: white;
 }
 
 button.next:hover {
-  background-color: #b7791f;
+  background-color: #2563eb; /* Darker Blue */
 }
 
 button.finish {
-  background-color: #e53e3e;
+  background-color: #ef4444; /* Red */
   color: white;
 }
 
 button.finish:hover {
-  background-color: #c53030;
+  background-color: #dc2626; /* Darker Red */
 }
-
