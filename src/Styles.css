@@ -1,0 +1,142 @@
+/* styles.css */
+
+
+body{
+  justify-content: center;
+  background-color:#4a5568;
+  align-content: safe;
+}
+
+  
+  .icon {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 800; /* extrabold */
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    color: white;
+    font-size: 1.125rem; /* lg */
+  }
+  
+
+
+  /* styles.css */
+
+/* Navbar Styles */
+.navbar {
+  background-color: #2d3748;
+  padding: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: #cbd5e0;
+}
+
+.navbar-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-link:hover {
+  color: #f6e05e;
+}
+
+/* General Container Styles */
+.container {
+  padding: 1.5rem;
+  background-color: rgba(245, 245, 245, 0.011);
+  border-radius: 1.5rem;
+  box-shadow: white;
+  width:  1200px;
+  height: 1000px;
+  margin: 2.5rem auto;
+  text-align: center;
+  
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Title Styles */
+.title {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: 800; /* extrabold */
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Description Styles */
+.description {
+  color: white;
+  font-size: 1.125rem; /* lg */
+}
+
+/* Button Styles */
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.previous {
+  border: 2px solid #cbd5e0;
+  background-color: white;
+  color: #4a5568;
+}
+
+button.previous:hover {
+  background-color: #edf2f7;
+}
+
+button.next {
+  background-color: #d69e2e;
+  color: white;
+}
+
+button.next:hover {
+  background-color: #b7791f;
+}
+
+button.finish {
+  background-color: #e53e3e;
+  color: white;
+}
+
+button.finish:hover {
+  background-color: #c53030;
+}
+
