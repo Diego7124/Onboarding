@@ -55,6 +55,24 @@ function Settings() {
             />
           </label>
         </div>
+        <div className="settings-option">
+          <label className="settings-label">
+            Foto de Perfil
+            <input 
+              type="file" 
+              className="settings-input" 
+            />
+          </label>
+        </div>
+        <div className="settings-option">
+          <label className="settings-label">
+            Integración con Redes Sociales
+            <input 
+              type="checkbox" 
+              className="settings-input" 
+            />
+          </label>
+        </div>
       </div>
     </div>
   );

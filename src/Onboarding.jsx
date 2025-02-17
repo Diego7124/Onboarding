@@ -14,7 +14,7 @@ function Onboarding({ onFinish }) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 to-pink-500 p-6">
-     
+      <Navbar />
       <motion.div
         key={step}
         initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ function Onboarding({ onFinish }) {
           {step > 0 && (
             <button 
               onClick={() => setStep(step - 1)} 
-              className="px-6 py-3 border-2 border-gray-300 rounded-full text-gray-700 font-semibold hover:bg-gray-200 transition"
+              className="previous"
             >
               Anterior
             </button>
@@ -37,18 +37,25 @@ function Onboarding({ onFinish }) {
           {step < steps.length - 1 ? (
             <button 
               onClick={() => setStep(step + 1)} 
-              className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full shadow-lg hover:bg-yellow-600 transition"
+              className="next"
             >
               Siguiente
             </button>
           ) : (
             <button 
               onClick={onFinish} 
-              className="px-6 py-3 bg-red-500 text-white font-semibold rounded-full shadow-lg hover:bg-red-600 transition"
+              className="finish"
             >
               Finalizar
             </button>
           )}
+        </div>
+        <div className="video-tutorial">
+          <h3 className="widget-title">Video Tutorial</h3>
+          <video width="320" height="240" controls>
+            <source src="tutorial.mp4" type="video/mp4" />
+            Tu navegador no soporta videos.
+          </video>
         </div>
       </motion.div>
     </div>
